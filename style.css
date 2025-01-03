@@ -1,0 +1,576 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:16px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+@font-face {
+	font-family: 'Archangelsk';
+	src: url('/fonts/archangelsk.eot'); /* IE 9 Compatibility Mode */
+	src: url('/fonts/archangelsk.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/fonts/archangelsk.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/fonts/archangelsk.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/fonts/archangelsk.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/fonts/archangelsk.svg#archangelsk') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+/* Header сайта */
+.hero-section{
+    height: 1000px;;
+    width: 100% !important;
+    background-image: url('backgrounds/11.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: changing 10s infinite ;
+}
+
+@keyframes changing{
+    0% { background-image: url('backgrounds/11.jpg'); }
+    35% { background-image: url('backgrounds/12.jpg'); }
+    68% { background-image: url('backgrounds/13.jpg'); }
+}
+
+
+.header {
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 1320px !important;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.social{
+    max-width: 379px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 40px;
+}
+
+
+.hero-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 624px;
+    height: 369px;
+    background-color: #F8F200;
+    position: absolute;
+    right: 320px;
+    bottom: 0;
+    clip-path:polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+
+.hero-text h2 {
+    font-family: 'Archangelsk' ;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.txt {
+    padding-left: 70px;
+    
+}
+
+.button {
+    margin-top: 25px;
+    width: 272px;
+    height: 78px;
+    background-color: #000000;
+    color: #F8F200;
+    font-size: 1.5rem;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+}
+
+
+.button:active {
+    transform: translateY(2px);
+}
+
+/* первый блок */
+
+.about {
+    padding-top: 70px;
+    padding-bottom: 55px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 36px;
+    max-width: 1352px;
+}
+
+.title_about {
+    font-family: 'Archangelsk' ;
+    font-weight: 400;
+    font-size: 3.8rem;
+    margin-bottom: 23px;
+    line-height: 63px;
+}
+
+.descr_about {
+    font-family: "Roboto", serif;
+    font-size: 1.15rem;
+    line-height: 34px;
+    margin-bottom: 70px;
+    max-width: 952px;
+    color: #777;
+}
+
+.descr_blue{
+    color: #52BEDC;
+}
+
+.about_img {
+    display: flex;
+}
+
+
+.about_img img {
+    clip-path:polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about_left{
+    margin-right: 32px
+}
+
+.mini-corner{
+    margin-bottom: 32px
+}
+/* 2 часть */ 
+
+.game {
+    position: relative;
+    padding-top: 91px;
+    padding-bottom: 135px;
+    background-color: rgb(0, 0, 0);
+}
+.title_game {
+    font-family: 'Archangelsk' ;
+    font-weight: 400;
+    font-size: 3.8rem;
+    margin-bottom: 23px;
+    line-height: 63px;
+    color: rgb(255, 255, 255);
+    background-image: url(backgrounds/Group\ 215.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 58px ;
+    padding-bottom: 23px;
+    padding-left: 164px;
+}
+.game_descr{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    line-height: 34px;
+    max-width: 952px;
+    margin-bottom: 52px;
+
+}
+
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-form {
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    align-items: flex-start;
+}
+
+.namegame {
+    font-family: "Roboto", serif;;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 11px;
+    padding-left: 0;
+    border-bottom:1px solid #777 ;
+    margin-bottom: 26px;
+}
+
+.mail {
+    font-family: "Roboto", serif;;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 11px;
+    padding-left: 0;
+    border-bottom:1px solid #777 ;
+    margin-bottom: 26px;
+}
+
+.form-label {
+    font-family: "Roboto", serif;;
+    width: 100%;
+    border: 1px dashed #777;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+.form-label-file {
+    position: absolute;
+    opacity: 0;
+}
+.form-label-text{
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.form-label-type{
+    font-size: 12px;
+}
+.submit {
+    background-color: #F8F200;
+    color: #000000;
+    padding: 19px 50px;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.personaldata{
+    color: #ffffff;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+}
+.text-data{
+    font-size: 12px;
+    font-family: "Roboto", serif;
+    margin-left: 5px;
+}
+
+
+.game::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-image: url(backgrounds/22\ 1.png);
+    background-repeat: repeat-x;
+}
+.game::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-image: url(backgrounds/22\ 2.png);
+    background-repeat: repeat-x;
+}
+
+/* 3 часть */
+.hp {
+    padding-top: 75px;
+    padding-bottom: 65px;
+    background-color: #F8F200;
+    
+}
+.hp-cont{
+    display: flex;
+    max-width: 1602px !important;
+    justify-content: space-between;
+}
+
+
+.hpcyber{
+    margin-bottom: 25px;
+    object-fit: cover;
+    overflow: clip;
+    overflow-clip-margin: content-box ;
+    width: 100%;
+}
+
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 16px);
+    margin-right: 32px;
+    align-items: center;
+}
+
+.right{
+    width: calc(50% - 16px);
+}
+
+
+.title_hp{
+    font-family: 'Archangelsk' ;
+    font-weight: 400;
+    font-size: 3.8rem;
+    margin-bottom: 23px;
+    line-height: 63px;
+}
+
+.hpdescr{
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+.positive{
+    font-family: "Roboto", serif;;
+    display: flex;
+    flex-direction: column;
+}
+
+.hp_positive1{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-image: url(icons/color_lens.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+.hp_positive2{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-image: url(icons/auto_awesome.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.hp_positive3 {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    background-image: url(icons/auto_awesome_motion.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.more {
+    background-color: #000000;
+    color: #F8F200;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 700px  ;
+    padding: 19px 50px;
+}
+
+/* 4 часть */
+.buygame{
+    position: relative;
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.leftbuy img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    max-width: 944px;
+    object-fit: cover;
+}
+
+.containerbuy{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rightbuy {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 65px;
+    padding-left: 16px;
+}
+
+
+.buy_title {
+    font-family: 'Archangelsk' ;
+    font-weight: 400;
+    font-size: 3.8rem;
+    margin-bottom: 25px;
+    line-height: 63px;
+}
+
+.complect_buy{
+    max-width: 466px;
+    display: flex;
+    flex-direction: column;
+}
+
+.complect_title{
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #52BEDC;
+}
+
+.complect1{
+    font-family:"Roboto", serif;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-image: url(icons/disk.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.complect2{
+    font-family:"Roboto", serif;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-image: url(icons/wysiwyg.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.complect3{
+    font-family:"Roboto", serif;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    background-image: url(icons/collections.png);
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+.platform {
+    max-width: 319px;
+    flex-wrap: wrap;
+}
+
+.platform h3{
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #52BEDC;
+}
+
+.platform_buttons {
+    margin-top: 24px;
+}
+.platform_buttons img:nth-child(2){
+    margin-left: 70px;
+}
+
+.platform_buttons img:nth-child(3){
+    margin-top: 47.8px;
+}
+
+.platform_buttons img:nth-child(4){
+    margin-top: 47.8px;
+    margin-left: 70px;
+}
+/* Footer */
+.footer {
+    background-color: #ffffff;
+}
+
+.footer_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+.footer_logos {
+    padding-left: 15px;
+}
+.footer_logos img:nth-child(2) {
+    margin-left: 32px;
+}
+
+
+.footer_links {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.footer_links span:nth-child(1) {
+    margin-right: 32px;
+}
+
+.footer_copyright {
+    font-family: "Roboto", serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px 0;
+}
+
+
+
+
+
