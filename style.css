@@ -27,6 +27,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 input:focus { color: white }
 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {opacity: 1; color:#fff;}
+
 /* Header сайта */
 .hero-section{
     height: 1000px;;
