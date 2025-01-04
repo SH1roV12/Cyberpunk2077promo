@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .hero-text h2 {
     font-family: 'Archangelsk' ;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 62px;
 }
 
 .txt {
@@ -572,5 +572,338 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 
 
+/* Media queries */
+@media (max-width: 1024px){
+    .hero-text{
+        bottom: 0;
+        right: 36px;
+    }
+    .title_about {
+        max-width: 620px !important;
+    }
+    .descr_about {
+        max-width: 790px !important;
+        text-align: left;
+    }
+    .about_img {
+        flex-direction: column;
+    }
+    .about_left{
+        display: flex !important;
+        width: 100%;
+        justify-content: space-between;
+        right: 0;
+        margin-bottom: 32px;
+        max-height: 196px;
+
+    }
+    .about_right{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .mini-corner{
+        margin-bottom: 0;
+    }
+    .title_game{
+        background-position: left top;
+        width: calc(50% - 16px);
+        padding-left: 0;
+        padding-top: 148px;
+        padding-bottom: 0;
+    }
+    .game_descr{
+        width: calc(50% - 16px);
+        margin-bottom: 16px;
+    }
+    .game-form{
+        width: calc(50% - 16px);
+    }
+    .game-img{
+        content: url(backgrounds/psxbox2.png);
+        position: absolute;
+        right: 36px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(46.5% - 16px);
+        margin-top: 18px;
+    }
+    .hplogo {
+        content: url(backgrounds/Group\ 2236.png);
+    }
+    .leftbuy img {
+        width: 33.33%;
+    }
+    .rightbuy{
+        width: 66.6%;
+    }
+}
 
 
+@media (max-width: 768px){
+    .container {
+        padding: 0 0px !important;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+        padding-left: 0px;
+        padding-right: 0px ;    
+    }
+    .hero-text{
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        
+    }
+    .title{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .button{
+        padding: 10px 50px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .txt{
+        padding-left: 30px;
+    }
+
+    .title_about{
+        padding: 0 12px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    .descr_about{
+        padding: 0 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    .about_img{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .about_left{
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+        gap: 32px;
+    }
+    .big-corner{
+        content: url(backgrounds/bigcornermob.png);
+        width: 100%;
+    }
+
+    .game-img{
+        content: url(backgrounds/Group\ 245.png);
+        top: 200px;
+        left: 0;
+        width: 80%;
+    }
+    .title_game{
+        background-image: url(backgrounds/Group\ 215.png);
+        padding-top: 200px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .game_descr{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .game-form{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hp-cont{
+        display: flex;
+        flex-direction:column ;
+        width: 100%;
+    }
+
+    .hpcyber{
+        content: url(backgrounds/monik.png);
+    }
+
+    .hplogo{
+        content: url(backgrounds/logomob.png);
+        width: 100%;
+    }
+
+    .left{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .right{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .hpdescr{
+        font-size:16px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+
+    .buyimg{
+        position: static;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .leftbuy img{
+        width: 100%;
+        max-height: 198px;
+    }
+
+    .rightbuy{
+        width: 100%;
+        padding: 238px 0;
+        padding-bottom: 70px;
+    }
+
+
+    .buy_title{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .complect_buy{
+        padding: 0 15px;
+    }
+
+    .complect3{
+        margin-bottom: 40px;
+    }
+
+    .platform{
+        width: 100%;
+        max-width: none;
+        padding: 0 15px;
+    }
+
+    .platform_buttons{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100vh;
+        flex-wrap: wrap;
+        max-width: 300px;
+
+    }
+
+    .platform_buttons img{
+        width: 48%;
+    }
+
+    .platform_buttons img:nth-child(1){
+        margin: 0 0;
+        width: 62px;
+        height: 35px;
+        
+    }
+
+    .platform_buttons img:nth-child(2){
+        margin: 0 0;
+        width: 178px;
+        height: 35px;
+        margin-left: 56px;
+    }
+    .platform_buttons img:nth-child(3){
+        margin: 0 0;
+        width: 58px;
+        height: 50px;
+        margin-top: 41px;
+    }
+    .platform_buttons img:nth-child(4){
+        margin: 0 0;
+        width: 168px;
+        height: 35px;
+        margin-top: 41px;
+    }
+
+
+    .footer_cont{
+        flex-direction: column;
+        align-items: center;
+        gap:15px
+    }
+    .footer_logos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer_logos img:first-child{
+        margin-top: 30px ;
+    }
+    .footer_logos img:last-child{
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
+
+
+    .footer_links{
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 0;
+        background-color: #E6E6E6;
+        
+    }
+
+
+    .footer_links a:first-child{
+        margin-top: 30px;
+    }
+    .footer_links a:last-child{
+        margin-bottom: 30px;
+    }
+
+    
+    
+    .title_hp{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+
+
+}
+
+@media (max-width: 480px){
+    .logo {
+        content: url(icons/Cyberpunk_2077_logo\ 12.png);
+    }
+    .social {
+        gap: 20px   ;
+        margin-left: 0;
+    }
+    .hero-text h2 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+}
