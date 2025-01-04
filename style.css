@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 		url('/fonts/archangelsk.svg#archangelsk') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-
+input:focus { color: white }
 
 /* Header сайта */
 .hero-section{
